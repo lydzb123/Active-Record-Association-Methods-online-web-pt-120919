@@ -10,7 +10,8 @@ class Song < ActiveRecord::Base
     if !Artist.find_by :name "Drake"
         Artist.new = "Drake"
         self.artist == "Drake"
-      else
+    else
+
       end
     # when this method is called it should assign the song's artist to Drake
     # Drake doesn't exist in the database as an artist yet, so you'll have to create a record
