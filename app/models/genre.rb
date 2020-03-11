@@ -15,8 +15,8 @@ class Genre < ActiveRecord::Base
     id = 1
     all = []
     if id > 0
-      id += 1
       all << self.artists[id][:name]
+      id += 1
     end
     all
     # return an array of strings containing every musician's name
