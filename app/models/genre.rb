@@ -15,4 +15,5 @@ class Genre < ActiveRecord::Base
     self.artists.map do |art|
       art.name
     end
+  end
 end
