@@ -7,9 +7,9 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-
     if !Artist.find_by :name "Drake"
         Artist.new = "Drake"
+        self.artist == "Drake"
       else
       end
     # when this method is called it should assign the song's artist to Drake
